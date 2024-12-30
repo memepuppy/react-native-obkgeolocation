@@ -439,6 +439,7 @@ RCT_REMAP_METHOD(getCurrentPosition, getCurrentPosition:(RNCGeolocationOptions)o
                              @"altitudeAccuracy": @(location.verticalAccuracy),
                              @"heading": @(location.course),
                              @"speed": @(location.speed),
+                             @"floor": @(location.floor),
                              },
                          @"timestamp": @([location.timestamp timeIntervalSince1970] * 1000) // in ms
                          };
